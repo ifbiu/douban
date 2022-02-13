@@ -1,5 +1,4 @@
-import 'package:douban/widgets/dashed_line.dart';
-import 'package:douban/widgets/star_rating.dart';
+import 'package:douban/pages/main/main.dart';
 import 'package:flutter/material.dart';
 
 main() {
@@ -12,38 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: IBHomePage(),
-    );
-  }
-}
-
-class IBHomePage extends StatelessWidget {
-  const IBHomePage({Key? key}) : super(key: key);
-  final title = "Default Title";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent
       ),
-      body: IBHomeContent(),
+      debugShowCheckedModeBanner: false,
+      home: IBMainPage(),
     );
   }
 }
-
-class IBHomeContent extends StatelessWidget {
-  const IBHomeContent({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text("Hello World"),
-    );
-  }
-}
-
 
 
 
