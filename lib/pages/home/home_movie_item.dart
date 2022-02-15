@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:douban/utils/log.dart';
 import 'package:douban/widgets/dashed_line.dart';
 import 'package:douban/widgets/star_rating.dart';
 import 'package:flutter/material.dart';
@@ -88,6 +89,7 @@ class HomeMovieItem extends StatelessWidget {
   }
 
   Widget buildContentInfoTitle(){
+    ibLog("HHHHH", StackTrace.current);
     return Text.rich(
       TextSpan(
         children: [
