@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_content.dart';
+
 class IBHomePage extends StatefulWidget {
   const IBHomePage({Key? key}) : super(key: key);
 
@@ -14,7 +16,7 @@ class _IBHomePageState extends State<IBHomePage> {
       appBar: AppBar(
         title: Text("首页"),
       ),
-      body: Center(child: Text("首页",style: TextStyle(color: Colors.red),)),
+      body: IBHomeContent(),
     );
   }
 }
